@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pactica 3</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="principal" class="no-seleccionable">
+    <div id="menu">
+        <div class="submenu">
+            <!--<img src="#" alt="title" id="title">-->
+            <h1 id="title" class="no-seleccionable">Brick Breacker TCM</h1>
+        </div>
+
+        <div class="submenu">
+            <div id="contensnick">
+                <input type="text" id="innick" alt="Nick" placeholder="Nickname" maxlength="16">
+            </div>
+        </div>
+        <div class="submenu">
+            <div id="play" class="no-seleccionable">Play</div>
+        </div>
+    </div>
+    <div id="joc" class="blur" style="display: none">
+        <div id="display">
+            <div id="nivell">Nivell: <span class="sNivell"></span></div>
+            <div id="bNivell">
+                <img src="img/arrow-u.png" id="bNivellUp" class="butt" width="50px" height="50px" alt="top">
+                <img src="img/arrow-d.png" id="bNivellDown" class="butt" width="50px" height="50px" alt="down">
+            </div>
+            <div id="informacio">
+                <table>
+                    <tr>
+                        <td class="left">Nick:</td>
+                        <td>
+                            <div class="nick"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">Marcador:</td>
+                        <td class="marcador"></td>
+                    </tr>
+                    <tr>
+                        <td class="left">Intents restants:</td>
+                        <td>
+                            <div id="vidas">
+                                <img src="img/vida.png" id="v1">
+                                <img src="img/vida.png" id="v2">
+                                <img src="img/vida.png" id="v3">
+                                <img src="img/vida.png" id="v4" style="display: none">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="top">
+                <div>Top 3:</div>
+                <div id="top1">---------</div>
+                <div id="top2">---------</div>
+                <div id="top3">---------</div>
+            </div>
+        </div>
+        <canvas id="game" width="750" height="625"></canvas>
+        <div>
+            <img src="img/audio-icon-l.png" id="laudio" class="audio" width="40px" height="40px">
+            <img src="img/audio-icon-h.png" id="haudio" class="audio" width="40px" height="40px">
+        </div>
+    </div>
+
+    <div id="menuGame" style="display: none">
+        <h2>Has perdut</h2>
+        <div>Nick: <span class="nick"></span></div>
+        <div>Nivell: <span class="sNivell"></span></div>
+        <div>Marcador: <span class="marcador"></span></div>
+        <div id="retry" class="no-seleccionable">Retry</div>
+    </div>
+
+    <div id="intructions" style="display: none">
+        <h2>Instruccions</h2>
+        <div>
+            <div>
+                <p>Mover barra</p>
+                <div>
+                    <img src="img/arrows.png" width="170px" height="80px">
+                    <img src="img/dobler.png" width="80px" height="80px">
+                </div>
+
+            </div>
+            <div>
+                <p>Iniciar juego</p>
+                <div>
+                    <img src="img/spacebar.png" width="250px" height="80px">
+                    <img src="img/pointer.png">
+                </div>
+
+            </div>
+        </div>
+        <div id="ok">Ok</div>
+
+
+    </div>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

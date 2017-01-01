@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "Zerohour";
+    src: url(../font/ZEROHOUR.TTF) format("truetype");
+}
+
+body {
+    background-image: url("../img/background.jpeg");
+    color: white;
+    font-family: Zerohour;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.scroll {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#principal {
+    width: 830px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+#joc {
+    margin-top: 20px;
+    top: 0;
+    position: absolute;
+}
+
+#game {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: gray 2px solid;
+    display: block;
+    margin: 0 auto;
+    cursor: w-resize;
+}
+
+#display {
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    width: 830px;
+}
+
+#display div {
+    float: left;
+}
+
+#nivell {
+    width: 125px;
+    padding: 70px 0 0 0;
+    text-align: center;
+}
+
+#bNivell {
+    width: 10%;
+}
+
+#bNivell img {
+    margin: 9px 0 0 0;
+    width: 50px;
+    height: 50px;
+}
+
+#nick {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 7px 7px 5px 9px;
+}
+
+#top {
+    width: 20%;
+    /*max-width: 20%;*/
+    padding-top: 20px;
+}
+
+#informacio {
+
+    width: 400px;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+table {
+    border: 0;
+    border-spacing: 10px;
+}
+
+#vidas {
+    text-align: left;
+}
+
+.left {
+    text-align: right;
+    width: 120px;
+}
+
+#contensnick {
+    background-color: rgb(76, 68, 124);
+    box-shadow: rgb(0, 0, 0) 0px 6px 50px;
+    border-radius: 29px;
+    width: 244px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    display: inline-block;
+    height: 43px;
+    position: relative;
+    text-align: center;
+
+}
+
+#innick {
+    height: 24px;
+    width: 220px;
+    font-size: 15px;
+    color: #e0e0ff;
+    background: none;
+    resize: none;
+    border: 0px;
+    vertical-align: middle;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 50px;
+    cursor: default;
+}
+
+.submenu {
+    margin: 50px 0;
+}
+
+#menu {
+    padding-top: 100px;
+    text-align: center;
+}
+#top > div{
+    width: 100%;
+    padding:5px 0;
+}
+
+#play, #retry, #ok {
+    width: 87px;
+    height: 29px;
+    border-radius: 34px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: rgb(0, 0, 0) 0px 3px 20px;
+    font-weight: bold;
+    background-image: url(../img/play.png);
+    padding-top: 18px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#play:hover, #retry:hover, #ok:hover {
+     border: 2px solid rgba(255, 255, 255, 0.3);
+ }
+
+
+.no-seleccionable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#menuGame {
+    background-color: blueviolet;
+    top: 300px;
+    left: 240px;
+    width: 300px;
+    height: 220px;
+    border: 1px solid black;
+    position: absolute;
+    text-align: center;
+}
+
+#menuGame div {
+    margin: 10px 0;
+}
+
+#retry {
+    margin-top: 100px;
+}
+#ok{
+    margin-top: 25px;
+}
+
+#retry:hover {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#intructions {
+    width: 400px;
+    height: 400px;
+    top:300px;
+    left: 240px;
+    position: absolute;
+    background-color: black;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+.audio, .butt{
+    cursor: pointer;
+}
